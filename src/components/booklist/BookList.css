@@ -1,0 +1,17 @@
+.top {
+  height: 145px;
+  background-image: radial-gradient(#0a99af, #057586);
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+.top h1 {
+  font-size: 60px;
+  margin-bottom: 2px;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+.top h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
