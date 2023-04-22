@@ -1,4 +1,6 @@
+import Book from '../book/Book';
 import './BookList.css';
+import { books } from '../book/books';
 
 function BookList() {
   return (
@@ -10,12 +12,9 @@ function BookList() {
       <div className="list">
         <div className="title">Best Sellers in Books</div>
         <div className="listContent">
-          <div className="book"></div>
-          <div className="book"></div>
-          <div className="book"></div>
-          <div className="book"></div>
-          <div className="book"></div>
-          <div className="book"></div>
+          {books.map((book) => {
+            return <Book {...book} key={book.id} />;
+          })}
         </div>
       </div>
     </>
