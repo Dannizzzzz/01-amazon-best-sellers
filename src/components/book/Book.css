@@ -3,6 +3,7 @@
   border-right: 1px solid #d3d3d3;
   padding: 50px 15px 0 15px;
   line-height: 18px;
+  position: relative;
 }
 .book:nth-of-type(3n) {
   border-right: 0;
@@ -33,4 +34,28 @@
 .book .price {
   color: #b12704;
   font-size: 14px;
+}
+.book .rank {
+  background-color: #c45500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  padding: 0 8px;
+}
+.rank .rankNum {
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.book .rankTri {
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-top: 25px solid;
+  color: #c45500;
+  position: absolute;
+  top: 0;
+  left: 35px;
 }
