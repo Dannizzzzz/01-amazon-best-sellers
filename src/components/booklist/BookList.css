@@ -36,3 +36,18 @@
   grid-template-columns: repeat(auto-fill, 332px);
   grid-auto-rows: 350px;
 }
+.bottom {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #364859;
+  margin-top: 30px;
+}
+.bottom .text {
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.bottom:hover {
+  background-color: #4b5767;
+}

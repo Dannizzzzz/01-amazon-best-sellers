@@ -3,6 +3,9 @@ import './BookList.css';
 import { books } from '../book/books';
 
 function BookList() {
+  const backToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <div className="top">
@@ -16,6 +19,11 @@ function BookList() {
             return <Book {...book} key={book.id} />;
           })}
         </div>
+      </div>
+      <div className="bottom">
+        <span className="text" onClick={backToTop}>
+          Back to Top
+        </span>
       </div>
     </>
   );
